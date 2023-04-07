@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Inter:wght@400;700&family=Montserrat:wght@500;700&family=Overpass:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Overpass:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+.container{
+    display: grid;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color:hsl(233, 47%, 7%) ;
+    /* margin: 20px; */
+}
+.text-container{
+    border-radius: 10px;
+    width: 320px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    margin: 30px;
+}
+.img{
+    background-color:  hsl(277, 104%, 21%);
+    border: 0.8px solid hsl(277, 104%, 21%);
+    border-radius: 10px;
+}
+.img img{
+    border-radius: 8px;
+    width: 320px;
+    opacity: 0.4;
+    
+}
+.heading{
+    padding: 20px 30px;
+    text-align: center;
+}
+.text-container h1{
+    color: hsl(0, 0%, 100%);
+    text-align: center;;
+}
+.text-container h1 span{
+    color: hsl(277, 64%, 61%);
+}
+.text-container p{
+    color:hsla(0, 0%, 100%, 0.6) ;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.3rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+}
+
+.info{
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+}
+.info .text-rating{
+    padding: 10px;
+}
+.info .text-rating span{
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: hsla(0, 0%, 100%, 0.6);
+    justify-content: space-between;
+}
+
+@media(min-width: 830px){
+    .text-container{
+        height: 25rem;
+        width: 60rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .container{
+        border-radius: 10px;
+    }
+    .img img{
+        width: 100%;
+        height: 100%;
+        /* background-image: url(./images/image-header-mobile.jpg); */
+    }
+    .heading{
+        width: 50%;
+        padding: 4rem;
+    }
+    .heading h1{
+        margin:0px;
+        justify-content: space-around;
+       text-align: left;
+    }
+    .heading p{
+        padding: 0px 10px;
+        font-size: 12px;
+        text-align: left;
+        
+    }
+    .info{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 40px;
+        padding: 50px;
+
+    }
+}
+
+    
